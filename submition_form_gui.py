@@ -455,6 +455,8 @@ def submit_details():
         choice_list.append(int(net_admin_val.get()))
 
         sp.insert_values(stu,choice_list)
+
+        import Edited_Login
     else:
         print("Error")
 

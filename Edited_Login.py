@@ -33,7 +33,7 @@ def signin():
         if row == None:
             messagebox.showerror('Error', 'Invalid username or password')
         else:
-            import SignIn
+            import home     # direct to home page
 
 def clear():
     user.get().delete(0,20)
@@ -93,6 +93,3 @@ label.place(x=75,y=270)
 sign_up= Button(frame,width=6,text='Sign up',border=0,bg='white',cursor='hand2',fg='#68aced',command=signup)
 sign_up.place(x=215,y=270)
 root.mainloop()
-
-
-
